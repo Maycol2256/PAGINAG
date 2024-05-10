@@ -1,0 +1,219 @@
+body{
+    width: 800px;
+    margin: auto;
+    background-color: rgb(63, 113, 63);
+}
+
+.barra{
+    padding-top: 1%;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(74, 74, 74);
+}
+.u{
+    display: flex;
+    justify-content: space-evenly;
+}
+.l{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    padding: 1%;
+    list-style: none;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(185, 185, 172);
+}
+
+.l:hover{
+    background-color: rgb(10, 10, 10);
+    animation: salto 1s infinite;
+}
+@keyframes salto {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+main{
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(65, 62, 62);
+}
+@keyframes desvanecido {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+section{
+    padding: 2%;
+}
+
+footer{
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(70, 65, 65);
+    text-align: center;
+}
+
+img{
+    width: 20%;
+    height: 50%;
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+    box-shadow: 10px 20px 20px 5px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagenes img:hover{
+    animation: imagenesA 2s;
+}
+
+@keyframes imagenesA {
+    0% {
+        width: 20%;
+    height: 50%;
+    }
+    50% {
+        width: 25%;
+        height: 55%;
+    }
+    100% {
+        width: 20%;
+    height: 50%;
+    }
+}
+
+button{
+    background-color: black;
+    border: none;
+    padding: 2%;
+    border-radius: 20px;
+}
+button:hover{
+    animation: salto 1s infinite;
+}
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card .front .IMAGENTAR{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #000;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+
+}
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back a{
+    color: #f3f3f3;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*
+///////////////////////*/
+

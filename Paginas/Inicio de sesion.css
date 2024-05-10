@@ -1,0 +1,36 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+section{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(27, 27, 27);
+    padding: 5%;
+    border-radius: 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+}
+h1{
+    font-size: 50px;
+}
+input{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    border-style: none;
+    outline-style: none;
+    padding: 2%;
+}
+
+button{
+    border-style: none;
+    outline-style: none;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: rgb(84, 84, 88);
+}
